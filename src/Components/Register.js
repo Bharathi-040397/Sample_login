@@ -58,7 +58,7 @@ function Register() {
                 <h3>Details</h3>
               <pre>
                     Name   : {data.name}<br/>
-                    Email  : {data.email}<br/>
+                    Email  : {data.email.length>20 ? data.email.substring(0,18)+"\n"+data.email.substring(18,25): data.email}<br/>
                     Ph.No  : {data.mobile}<br/>
                     Address: {data.address}<br/>
             </pre>
