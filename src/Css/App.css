@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: #eceff1;
+}
+/* App */
+.Welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Tangerine', cursive;
+    height: 90vh;
+    overflow: hidden;
+    margin-top: -2rem;
+
+}
+.Welcome>h1{
+  font-size: 5em;
+  color:#ec407a;
+  letter-spacing: 5px;
+  cursor:pointer;
+  transition: 0.5s;
+}
+h1:hover{
+    transform: scaleX(1.2);
+}
+.Menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    position: sticky;
+    top:0;
+    background-color: #eceff1;
+    font-family: 'Tangerine', cursive;
+}
+.Menu__back img{
+  width: 50px;
+  height: 50px;
+  padding-top: 2px;
+}
+.Menu__back img :hover{
+    color:#f06292 ;
+    opacity: 0.7;
+}
+.Menu__main
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+}
+.Menu a{
+    text-decoration: none;
+}
+.Menu h5{
+    color: #ec407a;
+    font-size: 2em;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 1;
+   
+}
+.Menu h5:hover{
+    color:#f06292 ;
+    opacity: 0.7;
+}
+/* Employee */
+.Employee{
+    width: '100vw';
+    padding-bottom: 3px;
+   
+}
+.Employee h5{
+    font-family: 'Tangerine', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+.Table{
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+    height: 600px;
+    overflow: scroll;
+}
+.Table ::-webkit-scrollbar{
+  display: none;
+}
+.Table td, .Table th{
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.Table tr:nth-child(even){background-color: #f2f2f2;}
+
+.Table tr:hover {background-color: #ddd;}
+
+.Table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #f06292;
+    color: white;
+  }
+/* Register */
+.Register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 90vh;
+    padding:10px;
+    width: 100vw;
+}
+.Register h3{
+    color:#ec407a;
+}
+.Register__form{
+    padding: 10px;
+    height: auto;
+    width:600px;
+}
+.Form__input{
+    margin:1rem;
+    display: flex;
+    flex-direction: column;
+}
+.Form__input input{
+    padding:8px 10px;
+    outline:none;
+    border-radius:10px;
+    border:1px solid #333;
+}
+.Form__input label{
+   font-size: 20px;
+   color:#ec407a;
+}
+.Form__button{
+   text-align: center;
+  
+}
+.Form__button button{
+    padding: 8px 25px;
+    width: 30%;
+    margin-top: 1rem;
+    background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 3px 5px 2px rgba(255, 105, 135, .3);
+    color: 'white';
+    height: 48px;
+    color:#f2f2f2;
+    font-size: 15px;
+    font-weight: 400px;
+}
+.Form__details{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.Form__details__text{
+    font-size: 16px;
+}
+.Form__img{
+    width:100px;
+    height: 100px;
+}
+@media only screen and (max-width:600px){
+    .Welcome>h1{
+    font-size: 4em;
+     }
+     .Menu__back img{
+        width: 30px;
+        height: 30px;
+      }
+      .Menu h5{
+          font-size: 1.2em;
+      }
+      .Menu__main
+     {
+        width: 150px;
+      }
+}
+@media only screen and (max-width:450px){
+    .Welcome>h1{
+    font-size: 3em;
+     }
+    }
+@media only screen and (max-width:650px){
+    .Register__form{
+       width:500px;
+    }
+    .Form__input input{
+        padding:5px 8px;
+    }
+    .Form__input label{
+       font-size: 15px;
+    }
+    .Form__button button{
+        padding: 3px 15px;
+        width: 25%;
+        height: 43px;
+        font-size: 12px;
+        margin-top: 0.5rem;
+    }
+}
+@media only screen and (max-width:550px){
+    .Register__form{
+       width:450px;
+    }
+    .Form__details{
+      flex-direction: column;
+    }
+    .Form__img{
+        margin-top: 1rem;
+    }
+}
+@media only screen and (max-width:450px){
+    .Register__form{
+       width:350px;
+    }
+}
+@media only screen and (max-width:350px){
+    .Register__form{
+       width:300px;
+    }
+    .Form__button button{
+        padding: 3px 10px;
+        height: 40px;
+
+    }
+}
