@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom'
 function Menu() {
     return (
       
-            <div className="Menu">
+             <div className="Menu">
                 <div className="Menu__back">
                 <NavLink to="/">
                 <img src="../recycle.png" alt="LoGo"/>

@@ -8,7 +8,7 @@ function Employee() {
     useEffect(() => {
         
         const getData = () => {
-            axios.get('http://dummy.restapiexample.com/api/v1/employees')
+            axios.get('https://dummy.restapiexample.com/api/v1/employees')
                 .then(result => {
                     console.log(result.data.data);
                     setData(result.data.data);
